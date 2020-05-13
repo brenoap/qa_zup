@@ -12,7 +12,7 @@ from pytest_bdd import (
 )
 
 
-@scenario('../../features/shopping_cart/add_to_shopping_cart.feature', 'I buy a Product')
+@scenario('./../../features/shopping_cart/add_to_shopping_cart.feature', 'I buy a Product')
 def test_i_buy_a_product():
     """I buy a Product"""
 

@@ -19,3 +19,8 @@
 ###### Running an specific test
 - Inside root folder
 - run: py test --gherkin-terminal-reporter -vv tests/steps/test_search_for_product.py
+
+## Future Enhancements
+- Develop more use cases to cover different parts of the webapplication
+- Use of beforeeach and aftereach in some cases that the code is "duplicated"
+- Use of different types of tests, like integration and unit test to increase the coverage
