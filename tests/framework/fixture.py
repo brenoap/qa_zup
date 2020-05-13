@@ -1,8 +1,8 @@
 import pytest
 from tests.framework.app import APP
-from tests.pages.homePage import HomePage
-from tests.pages.shoppingCartPage import ShoppingCartPage
-from tests.pages.userLoginPage import UserLoginPage
+from tests.pages.home.homePage import HomePage
+from tests.pages.shopping_cart.shoppingCartPage import ShoppingCartPage
+from tests.pages.user_login.userLoginPage import UserLoginPage
 
 
 @pytest.fixture

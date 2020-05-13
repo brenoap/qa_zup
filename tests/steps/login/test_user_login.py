@@ -11,7 +11,7 @@ from pytest_bdd import (
 )
 
 
-@scenario('../../features/user_login.feature', 'Login into Shoptime Site')
+@scenario('../../features/user_login/user_login.feature', 'Login into Shoptime Site')
 def test_login_into_shoptime_site():
     """Login into Shoptime Site"""
 

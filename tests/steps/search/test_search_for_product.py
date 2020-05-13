@@ -11,7 +11,7 @@ from pytest_bdd import (
 )
 
 
-@scenario('../../features/search_for_product.feature', 'Search for a Product')
+@scenario('../../features/home/search_for_product.feature', 'Search for a Product')
 def test_search_for_a_product():
     """Search for a Product"""
 
