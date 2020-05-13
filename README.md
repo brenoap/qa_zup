@@ -20,6 +20,11 @@
 - Inside root folder
 - run: py test --gherkin-terminal-reporter -vv tests/steps/test_search_for_product.py
 
+## Docker testes
+- To run tests on docker
+- on root folder, build the image, run: sudo docker build -t qa_zup .
+- to run the image, run: sudo docker run -it qa_zup /bin/bash
+
 ## Future Enhancements
 - Develop more use cases to cover different parts of the webapplication
 - Use of beforeeach and aftereach in some cases that the code is "duplicated"
