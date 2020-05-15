@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from tests.locator.locator import Locator
 from tests.framework.base_element import BaseElement
+from tests.testdata.testrun import TEST_RUN_DATA as test_run_data
 
 
 class UserLoginPage:
@@ -9,7 +10,7 @@ class UserLoginPage:
         self.driver = app.driver
         self.driver.maximize_window()
 
-# Locators
+    # Locators
 
     @property
     def email_input(self):
@@ -26,10 +27,10 @@ class UserLoginPage:
         locator = Locator(By.ID, "login-button")
         return BaseElement(self.driver, locator)
 
-# Methods
+    # Methods
 
     def goToLoginPage(self):
-        self.driver.get("https://cliente.shoptime.com.br/simple-login/")
+        self.driver.get(test_run_data['login_page_url'])
 
     def insertEmail(self, text):
         self.email_input.input_text(text)

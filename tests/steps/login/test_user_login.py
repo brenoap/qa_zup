@@ -1,5 +1,6 @@
 import pytest
 from tests.framework.fixture import userLoginPage
+from tests.framework.fixture import homePage
 from tests.framework.fixture import app
 from tests.testdata.testrun import TEST_RUN_DATA as test_run_data
 
@@ -11,7 +12,7 @@ from pytest_bdd import (
 )
 
 
-@scenario('./../../features/user_login/user_login.feature', 'Login into Shoptime Site')
+@scenario('./../../features/login/user_login.feature', 'Login into Shoptime Site')
 def test_login_into_shoptime_site():
     """Login into Shoptime Site"""
 
@@ -28,7 +29,8 @@ def i_enter_my_credentials(userLoginPage):
 
 
 @then('I click on continue button')
-def i_click_on_continue_button(userLoginPage, app):
+def i_click_on_continue_button(userLoginPage, homePage, app):
     userLoginPage.clickOnLogin()
+    assert homePage.checkHomePage()
     app.take_screenshot('results')
     app.driver.quit()

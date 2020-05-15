@@ -1,5 +1,6 @@
 import pytest, time
 from tests.framework.fixture import homePage
+from tests.framework.fixture import shoppingCartPage
 from tests.framework.fixture import app
 from tests.testdata.testrun import TEST_RUN_DATA as test_run_data
 
@@ -32,7 +33,8 @@ def i_should_see_my_product_on_the_list(homePage):
 
 
 @then('I should open the Product Page')
-def i_should_open_the_product_page(homePage, app):
+def i_should_open_the_product_page(homePage, shoppingCartPage, app):
     homePage.openProductsPage()
+    assert shoppingCartPage.verifyProductOnBasket()
     app.take_screenshot('results')
     app.driver.quit()
