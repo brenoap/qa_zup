@@ -26,6 +26,7 @@
 - To run tests on docker
 - on root folder, build the image, run: docker build -t qa_zup .
 - to run the image, run: docker run -it qa_zup /bin/bash
+- then, run the tests: pytest --gherkin-terminal-reporter -v
 
 ## Future Enhancements
 - Develop more use cases to cover different parts of the webapplication
