@@ -24,8 +24,8 @@
 
 ## Docker testes
 - To run tests on docker
-- on root folder, build the image, run: sudo docker build -t qa_zup .
-- to run the image, run: sudo docker run -it qa_zup /bin/bash
+- on root folder, build the image, run: docker build -t qa_zup .
+- to run the image, run: docker run -it qa_zup /bin/bash
 
 ## Future Enhancements
 - Develop more use cases to cover different parts of the webapplication
