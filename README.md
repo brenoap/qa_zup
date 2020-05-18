@@ -13,12 +13,14 @@
 
 ###### Running all tests
 - Inside root folder
-- run with more details: py test --gherkin-terminal-reporter -vv
-- run with less details: py test --gherkin-terminal-reporter -v
+- run with more details: pytest --gherkin-terminal-reporter -vv
+- run with less details: pytest --gherkin-terminal-reporter -v
+- run with report: pytest --gherkin-terminal-reporter --html=report.html -v
 
 ###### Running an specific test
 - Inside root folder
-- run: py test --gherkin-terminal-reporter -vv tests/steps/test_search_for_product.py
+- run: pytest --gherkin-terminal-reporter -vv tests/steps/test_search_for_product.py
+- run with report: pytest --gherkin-terminal-reporter --html=report.html -vv tests/steps/test_search_for_product.py
 
 ## Docker testes
 - To run tests on docker

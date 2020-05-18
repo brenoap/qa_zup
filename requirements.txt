@@ -1,3 +1,4 @@
 pytest
 pytest_bdd
 selenium
+pytest-html
